@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,34 +9,34 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -80,9 +80,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -92,7 +93,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -100,16 +100,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -162,21 +166,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d85f790c-da32-4e6a-aee1-e20326de17a2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -189,7 +180,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -397,6 +388,7 @@
 			(pintype "passive")
 			(uuid "a6f2fed3-30aa-45a9-8f2b-554d0c8b883d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -433,19 +425,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "42f4ed43-f796-4510-9ce0-f85784287196")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -673,7 +652,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "26165cef-04a9-4cbd-8422-2296f1ef326d")
 		)
@@ -844,7 +823,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "80368692-9438-49ba-8c86-5d0a15641fc4")
 		)
@@ -855,7 +834,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "0e6d84ab-c6a5-442e-a43d-68946b3dea3a")
 		)
@@ -892,6 +871,7 @@
 			(pintype "passive")
 			(uuid "c9a8a84f-151c-4536-bf54-1a4770dd59b2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -928,19 +908,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "84698f5e-3caa-4453-8d6d-98e6e891c515")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -983,7 +950,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "3f6e9704-c8f6-42bb-943a-d28c3221d8dc")
 		)
@@ -994,7 +961,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "bec9aed7-2e73-4064-aa3a-c6cd7b140af0")
 		)
@@ -1005,7 +972,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "fafebad7-751a-4cbb-9403-1b3bfa26f22e")
 		)
@@ -1040,6 +1007,7 @@
 			(pintype "passive")
 			(uuid "6cc4e80e-e620-453f-9545-f5fc420893e9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D5.0mm_H11.0mm_P2.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1076,19 +1044,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d8464ae1-49d5-44f4-af33-6b0b1ef47ea5")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1316,7 +1271,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "ec584338-bf59-4080-8de2-076daffa9d3d")
 		)
@@ -1487,7 +1442,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "041a6528-50ce-42ba-a803-9d65720c1f8c")
 		)
@@ -1498,7 +1453,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "fe304007-9f1d-449e-aa1f-8cea0494896d")
 		)
@@ -1535,6 +1490,7 @@
 			(pintype "passive")
 			(uuid "9fed09a0-13aa-41cb-8ec2-56f0c7e7276e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1575,21 +1531,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b212fd49-b398-482b-805e-99a623896c57")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1602,7 +1545,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1810,6 +1753,7 @@
 			(pintype "passive")
 			(uuid "65d6edf3-238a-40df-812e-a829159187b8")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1847,19 +1791,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c80b7f1f-3c72-41cc-9a32-1912c9b4f4b6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1902,7 +1833,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "66b8243a-8161-4488-bbec-91e009cabc6f")
 		)
@@ -1913,7 +1844,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "4d7828b9-6d27-4bb0-ac1f-426b54cff40c")
 		)
@@ -1924,7 +1855,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "0ed16f4d-9247-47a0-83ff-0b94f159648a")
 		)
@@ -1959,6 +1890,7 @@
 			(pintype "passive")
 			(uuid "09d26e45-ccec-4015-9d7f-a58539ff772a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D5.0mm_H11.0mm_P2.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1995,19 +1927,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b1bd3d48-4b79-4468-8eef-a4f2e9c03422")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2235,7 +2154,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "593fccaf-4759-40ec-ace1-5329f66962c3")
 		)
@@ -2406,7 +2325,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "fda13ed8-07da-46ed-8560-3d3434602d7a")
 		)
@@ -2417,7 +2336,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "6474a0ad-5116-4ef2-b67b-440272502b4a")
 		)
@@ -2454,6 +2373,7 @@
 			(pintype "passive")
 			(uuid "f28d270b-686c-450c-9103-2e06d2dce798")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2490,19 +2410,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05503HBWC_1x03_P5.00mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "28c81120-f24f-4681-861f-5e158c5bb424")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2770,7 +2677,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "c539f8a5-9ab6-480c-945c-4844e808774a")
 		)
@@ -2781,7 +2688,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "5d912ad6-91b7-4868-88fb-eee35356b6fa")
 		)
@@ -2972,7 +2879,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "38d4ff3c-c6bc-4c0f-98b0-ceb3673e08bf")
 		)
@@ -2983,7 +2890,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "95d13e64-3d94-445f-810d-94a7864c1584")
 		)
@@ -2994,7 +2901,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "e8291774-f5c0-4f8d-b015-1a342476ddad")
 		)
@@ -3042,6 +2949,7 @@
 			(pintype "passive")
 			(uuid "f636a77a-c5b6-4754-a7a5-86a3af91f6cb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type011_RT05503HBWC_1x03_P5.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3078,19 +2986,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "136f0c28-8a8c-41de-9c43-25d5c49e661b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3375,6 +3270,7 @@
 			(pintype "input")
 			(uuid "c52662db-8eeb-4de8-ade4-ba90b8400113")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3411,19 +3307,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "45116184-0e79-4523-95ed-d6966fa528cb")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3651,7 +3534,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "865d83eb-db3b-440f-a10d-8b34130492be")
 		)
@@ -3822,7 +3705,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "f0e4907d-4570-4972-85ff-623c9e30b6d7")
 		)
@@ -3833,7 +3716,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "7c17d906-55dd-4430-9026-d173becdfaea")
 		)
@@ -3870,6 +3753,7 @@
 			(pintype "passive")
 			(uuid "ea7fb995-de84-4eb4-9c8e-242e11c7acf9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3906,19 +3790,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1ca8f66e-8ef7-4622-aebe-6e0a45725a4d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4146,7 +4017,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "ab2f65c9-7cb3-42e8-9bce-2ed58daff6ef")
 		)
@@ -4317,7 +4188,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "8766a07d-ed7d-4231-97ee-d521a3b3403f")
 		)
@@ -4328,7 +4199,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "120cd1ce-2a67-4d8b-81a4-f155d344b17f")
 		)
@@ -4365,6 +4236,7 @@
 			(pintype "passive")
 			(uuid "688ef45f-c20d-4a44-a1a4-140c3cf248bd")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4401,19 +4273,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "27f963f6-57ec-4d25-87b9-0effcceaf83e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4597,6 +4456,7 @@
 			(pintype "passive")
 			(uuid "9f1dfff3-c7d8-4ea1-baad-7ad3cd4c5438")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4633,19 +4493,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f651350c-bd62-4cbf-a810-92f92e296b74")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4688,7 +4535,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "b0ad797a-15d9-481b-9526-c5f0e70b9ce8")
 		)
@@ -4699,7 +4546,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "83028518-cea3-4d94-b7f0-4c89637f1431")
 		)
@@ -4710,7 +4557,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "e3227b14-a60e-49d6-b73e-1171374e9883")
 		)
@@ -4745,6 +4592,7 @@
 			(pintype "passive")
 			(uuid "8c531585-d39c-4372-a5a9-bba4b68f6a0d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D5.0mm_H11.0mm_P2.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4782,19 +4630,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fda02a95-7b35-40c8-9269-d6661bd95b4b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4837,7 +4672,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "387ba312-6343-471d-8d4a-9d04d02aaf73")
 		)
@@ -4848,7 +4683,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "8c1b8e76-6e04-4778-8d0a-b48ebc1a0b16")
 		)
@@ -4859,7 +4694,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "02451b73-a54e-40d7-9cd7-f27318623ec9")
 		)
@@ -4894,6 +4729,7 @@
 			(pintype "passive")
 			(uuid "44fe3d85-ff9d-4755-bdaa-0434d553d058")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D5.0mm_H11.0mm_P2.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4930,19 +4766,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "51415033-ebb2-402b-8311-5414eda502d7")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5169,6 +4992,7 @@
 			(pintype "passive")
 			(uuid "e84b3e15-4ef1-4edd-9288-d3a23a6cc51d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5205,19 +5029,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05505HBWC_1x05_P5.00mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1565e4d2-d026-4d97-ba22-4b0f9a432a75")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5565,7 +5376,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "ec44ddb6-0a4d-4ea2-925f-ad55898318c2")
 		)
@@ -5576,7 +5387,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "211fdb2f-3369-4bf1-9391-cd41dcb18d2a")
 		)
@@ -5587,7 +5398,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "cc6488fd-3f65-4d5d-9446-bbbfb8f59a2d")
 		)
@@ -5598,7 +5409,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "d1366656-6308-4d40-861a-b76b54945fe1")
 		)
@@ -5829,7 +5640,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "23b295cc-87f6-4721-bc1c-7ca3040c5258")
 		)
@@ -5840,7 +5651,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "fb6f38c2-55de-4050-9532-298d0783db84")
 		)
@@ -5851,7 +5662,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "452f3fa6-abc0-4df9-83e7-7574d39c331c")
 		)
@@ -5862,7 +5673,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "f88c3b78-7442-48e7-b7fe-a9c792551d15")
 		)
@@ -5873,7 +5684,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "1cff3c20-b38c-4f39-92f0-7e08a03a49cf")
 		)
@@ -5943,6 +5754,7 @@
 			(pintype "passive")
 			(uuid "a604e44a-ef21-4b86-904b-c2759dfab905")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type011_RT05505HBWC_1x05_P5.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5979,19 +5791,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "66aea609-556d-433c-9f6f-48a050c459b1")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6219,7 +6018,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "af7032c4-09b3-4eb3-9eff-96111aebe85b")
 		)
@@ -6390,7 +6189,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "3eef3b29-d36d-4440-bd7b-7e3916435a87")
 		)
@@ -6401,7 +6200,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "a2767eb5-db3f-420f-a6c0-cbfa49a93359")
 		)
@@ -6438,6 +6237,7 @@
 			(pintype "passive")
 			(uuid "98924e8c-d500-4e7d-9cca-ada0e2ab308e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6475,20 +6275,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "Battery:BatteryHolder_Eagle_12BH611-GR"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "4574dfa7-b5a6-496c-9698-2386b060a1be")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -6945,6 +6731,7 @@
 			(pintype "passive")
 			(uuid "aaefea3f-718d-477d-9ffd-0d637905be49")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Eagle_12BH611-GR.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6964,7 +6751,7 @@
 			(width 0.2)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "91e20df6-308b-4f07-9e8a-c27b6a218aa5")
 	)
@@ -8792,4 +8579,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
